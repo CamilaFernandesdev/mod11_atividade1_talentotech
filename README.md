@@ -36,7 +36,7 @@ Desenvolvimento de página Web para atividade do programa Talento Tech do govern
    git clone https://github.com/CamilaFernandesdev/mod11_atividade1_talentotech.git
    ```
 
-2. Abra o arquivo `index.html` em um navegador.
+2. Abra o arquivo `homepage.html` em um navegador.
 
 ## Melhorias Futuras
 
