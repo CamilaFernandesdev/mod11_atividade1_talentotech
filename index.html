@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Região Sul do Brasil</title>
-<style>
+    <title>Região Sul do Brasil</title>
+    <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -10,7 +11,7 @@
             flex-direction: column;
             height: 100vh;
         }
-  
+
         header {
             background-color: #2e2e2e;
             color: white;
@@ -32,7 +33,7 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-  
+
         header a:hover {
             background-color: #006400;
         }
@@ -96,6 +97,7 @@
             background-color: #008000;
             color: #ffd700;
         }
+
         .icon {
             display: inline-block;
             width: 16px;
@@ -108,48 +110,50 @@
         }
     </style>
 </head>
+
 <body>
- <header>
-    <span>Sobre o Brasil</span>
-    <a href="#home" onclick="exibirConteudo('home')">Home</a>
-</header>
-<main>
-	<nav class="menu-lateral">
-    <h2> Estados </h2>
-    <a href="#parana" onclick="exibirConteudo('parana')"> Paraná </a>
-    <a href="#santa-catarina" onclick="exibirConteudo('santa-catarina')"> Santa Catarina </a>
-    <a href="#rio-grande-do-sul" onclick="exibirConteudo('rio-grande-do-sul')"> Rio Grande do Sul </a>
-    </nav>
-  <div class="conteudo" id="conteudo">
-	  <h1>Bem-vindo ao Sul do Brasil</h1>
-    <p> Escolha um estado para saber mais sobre ele </p>
-</div>
-</main>
- <footer>
-    &copy; 2024 Região Sul do Brasil. Todos os direitos reservados.
-</footer>
-    
-<script>
-function exibirConteudo(estado) {
- const conteudo = document.getElementById('conteudo');
- switch (estado) {
- case 'parana':
- conteudo.innerHTML = `<h1>Paraná</h1>
+    <header>
+        <span>Sobre o Brasil</span>
+        <a href="#home" onclick="exibirConteudo('home')">Home</a>
+    </header>
+    <main>
+        <nav class="menu-lateral">
+            <h2> Estados </h2>
+            <a href="#parana" onclick="exibirConteudo('parana')"> Paraná </a>
+            <a href="#santa-catarina" onclick="exibirConteudo('santa-catarina')"> Santa Catarina </a>
+            <a href="#rio-grande-do-sul" onclick="exibirConteudo('rio-grande-do-sul')"> Rio Grande do Sul </a>
+        </nav>
+        <div class="conteudo" id="conteudo">
+            <h1>Bem-vindo ao Sul do Brasil</h1>
+            <p> Escolha um estado para saber mais sobre ele </p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Região Sul do Brasil. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        function exibirConteudo(estado) {
+            const conteudo = document.getElementById('conteudo');
+            switch (estado) {
+                case 'parana':
+                    conteudo.innerHTML = `<h1>Paraná</h1>
                         <p>O Paraná é conhecido por suas belezas naturais, como as Cataratas do Iguaçu e o Parque Nacional do Iguaçu.</p>`;
                     break;
- case 'santa-catarina':
- conteudo.innerHTML = `<h1>Santa Catarina</h1>
+                case 'santa-catarina':
+                    conteudo.innerHTML = `<h1>Santa Catarina</h1>
                         <p>Santa Catarina é famosa por suas praias paradisíacas e pelo Oktoberfest em Blumenau.</p>`;
                     break;
- case 'rio-grande-do-sul':
- conteudo.innerHTML = `<h1>Rio Grande do Sul</h1>
+                case 'rio-grande-do-sul':
+                    conteudo.innerHTML = `<h1>Rio Grande do Sul</h1>
                         <p>O Rio Grande do Sul destaca-se por sua cultura gaúcha, churrasco e o tradicional chimarrão.</p>`;
                     break;
- default:
- conteudo.innerHTML = `<h1>Bem-vindo à Região Sul do Brasil</h1>
+                default:
+                    conteudo.innerHTML = `<h1>Bem-vindo à Região Sul do Brasil</h1>
                        <p>Escolha um estado no menu ao lado para saber mais sobre ele.</p>`;
             }
         }
     </script>
 </body>
+
 </html>
